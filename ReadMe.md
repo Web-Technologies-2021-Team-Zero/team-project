@@ -21,9 +21,9 @@ Wait for another team member to approve it and then merge the branches.
 Continue making changes on your own branch. 
 
 ### Roles 
-Frontend - Lorraine 
-Backend - Millicent
-Database - Joana
-Project Manager - Tracy
+Frontend - Lorraine  
+Backend - Millicent  
+Database - Joana  
+Project Manager - Tracy  
 
 Thank you and happy coding!
