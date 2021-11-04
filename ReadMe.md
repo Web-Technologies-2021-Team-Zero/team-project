@@ -1,4 +1,4 @@
-# Team Project | Web Technologies 2021 
+# Resource Study Hub  
 
 ### Getting Started 
 
@@ -20,5 +20,10 @@ Wait for another team member to approve it and then merge the branches.
 #### Step 5 
 Continue making changes on your own branch. 
 
-Thank you and happy coding!
+### Roles 
+Frontend - Lorraine 
+Backend - Millicent
+Database - Joana
+Project Manager - Tracy
 
+Thank you and happy coding!
