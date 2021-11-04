@@ -11,7 +11,7 @@ To create a branch use the command <code> git branch branch-name </code>
 
 #### Step 3 
 Ensure you are editing on your branch always, not always on the main repository. 
-Run the command <code> git checkout branch-name <code> 
+Run the command <code> git checkout branch-name </code> 
 
 #### Step 4 
 When done with changes, create a pull request on the main repo online. 
