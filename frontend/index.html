@@ -4,35 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link href="/frontend/styles/main.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="./styles/main.css" rel="stylesheet" type="text/css" />
 
     <title>Resource Hub | Team Zero</title>
+    <script src="./scripts/headings.js"></script>
 </head>
-<body>
-    <div class="main-container" >
-        <div class="login-container">
-            <div class="login"> 
-                <div class="logo">
-                    <img src="./images/logo_v1.JPG" alt="Logo" id="login-logo" />
-                </div>
-                <div class="username">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" name="username" />
-                </div>
-                <div class="password">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" />
-                </div>
-                <div class="button-container">
-                    <button id="login-button" onClick={login}>Log In</button>
-                </div>
-                <div class="contact-admin">
-                    Don't have an account? <a href="#">Sign Up</a><br /> 
-                    Forgot your password? <a href="#">Reset it now</a>
-                </div>
-            </div>
-        </div>
-    </div> 
+<body onload="test()">
+    <nav>
+        <img src="./images/logo_v1.JPG" alt="Resource hub logo">
+        <!-- <div class="navbar">
+            <div>
+                <input type="text" placeholder="Search.." name="search" id="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div> -->
+            
+            <span>
+                <a href="#">Help</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">Sign Up</a>
+            </span>
+    </nav>
+    <div style="clear: both;"></div>
+    <main>
+        <h1 id="hello"></h1>
+        <h2 id="hello_two"></h2>
+    </main>
+
+
+    <script src="./scripts/index.js"></script>
 </body>
 </html>

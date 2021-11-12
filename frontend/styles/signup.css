@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+}
+
+.main-container {
+    background-color: #800000;
+    height: 100vh;
+    font-family: Lato, sans-serif;
+}
+
+.login-container {
+    height: 650px;
+    background-color: white;
+    width: 35%;
+    margin: 0 auto; 
+    top: 8%; 
+    left: 32%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+}
+
+.login {
+    position: absolute; 
+    width: 350px; 
+    height: 300px;
+    padding: 25px;
+}
+
+.logo {
+    height: 100px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+#login-logo {
+    height: 100px; 
+    display: inline;
+}
+
+.fullname {
+    height: 50px; 
+    padding: 0 20px 20px 20px;
+    color: #800000; 
+}
+
+.email, .major, .yeargroup, .password, .confirmpassword {
+    height: 50px; 
+    padding: 0 20px 20px 20px; 
+    color: #800000;
+}
+
+.button-container {
+    height: 30px;
+    padding: 10px 20px 20px 20px; 
+    color: #800000;
+}
+
+.contact-admin {
+    padding: 0 20px 20px 20px; 
+    width: 315px; 
+    font-size: 14px; 
+    text-align: center;
+}
+
+#login-button {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #800000; 
+    color: white; 
+    border: none; 
+    height: 40px; 
+    width: 315px; 
+    padding: 20px; 
+    font-weight: bold; 
+    font-size: 16px; 
+    text-align: center
+}
+
+label {
+    font-style: italic; 
+    font-size: 12px;
+}
+
+input {
+    display: block; 
+    height: 22px; 
+    width: 300px; 
+    padding: 5px; 
+    border: 1px solid #80000052; 
+    border-radius: 2%;
+}
+
+
