@@ -18,6 +18,7 @@ body {
     position: absolute;
     display: flex;
     justify-content: space-around;
+    border-radius: 20px;
 }
 
 .login {
@@ -64,7 +65,7 @@ body {
     text-align: center;
 }
 
-#login-button {
+#signup-button {
     display: flex; 
     justify-content: center; 
     align-items: center; 
@@ -73,11 +74,13 @@ body {
     border: none; 
     height: 40px; 
     width: 315px; 
-    padding: 20px; 
+    padding: 10px 20px 30px 20px; 
     font-weight: bold; 
     font-size: 16px; 
-    text-align: center
-}
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+} 
 
 label {
     font-style: italic; 
@@ -93,4 +96,10 @@ input {
     border-radius: 2%;
 }
 
+input:focus {
+    outline: 1px solid #800000;
+}
 
+.contact-admin a {
+    color: #800000;
+}

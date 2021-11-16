@@ -41,6 +41,7 @@ nav span a {
 
 nav span a:hover {
     border-bottom: 3px solid #800000;
+    color-scheme: #570000;
 }
 
 .navbar input,.navbar button,.navbar span {
@@ -67,6 +68,5 @@ nav span a:hover {
     font-size: 17px;
     cursor: pointer;
     height: 37px;
-
 }
 

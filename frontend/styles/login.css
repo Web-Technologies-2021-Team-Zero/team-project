@@ -64,7 +64,7 @@ body {
     text-align: center;
 }
 
-#login-button {
+#signup-button {
     display: flex; 
     justify-content: center; 
     align-items: center; 
@@ -73,10 +73,12 @@ body {
     border: none; 
     height: 40px; 
     width: 315px; 
-    padding: 20px; 
+    padding: 10px 20px 30px 20px; 
     font-weight: bold; 
     font-size: 16px; 
-    text-align: center
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
 }
 
 label {
@@ -90,6 +92,10 @@ input {
     padding: 5px; 
     border: 2px solid #800000; 
     border-radius: 2%;
+}
+
+.contact-admin a {
+    color: #800000;
 }
 
 
