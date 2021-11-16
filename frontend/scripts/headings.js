@@ -6,19 +6,12 @@ function typeIntro() {
     
     if (typeVar < intro.length) {
         document.getElementById("hello").innerHTML += intro.charAt(typeVar)
+        document.getElementById("hello_two").innerHTML += intro_two.charAt(typeVar)
         typeVar++
         setTimeout(typeIntro, 100)
     }
 }
 
-function test() {
-    if (typeVar < intro_two.length) {
-        document.getElementById("hello_two").innerHTML += intro_two.charAt(typeVar)
-        typeVar++
-        typeIntro()
-        setTimeout(test, 100)
-    }
-}
 
 
 
