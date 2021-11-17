@@ -36,12 +36,12 @@ nav span {
 nav span a {
     padding: 20px;
     text-decoration: none;
-    color: #800000;
+    color: #800000c9;
 }
 
 nav span a:hover {
     border-bottom: 3px solid #800000;
-    color-scheme: #570000;
+    color: #570000;
 }
 
 .navbar input,.navbar button,.navbar span {
@@ -70,3 +70,39 @@ nav span a:hover {
     height: 37px;
 }
 
+.footer-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 400px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #800000;
+    color: white;
+}
+
+footer a, footer span {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-content {
+    text-align: center;
+    
+}
+
+footer img {
+    height: 100px;
+}

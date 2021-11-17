@@ -22,7 +22,7 @@ function checkFieldLength(input, minLength, maxLength) {
         showAllErrors(input.nextElementSibling, `Your ${input.name} cannot be less than characters long`)
     }
     if (input.value.length >= maxLength) {
-        showAllErrors(input.nextElementSibling, `Your ${input.name)} cannot be more than characters long`)
+        showAllErrors(input.nextElementSibling, `Your ${input.name} cannot be more than characters long`)
     }
 }
 
@@ -44,6 +44,7 @@ function checkUserEmail(input) {
 
 function checkYeargroup(input) {
     let y_group = parseInt(input.value)
+    alert(y_group)
     if (y_group) {
         if ((y_group < 2022) && (y_group > 2025) ) {
             showAllErrors(input.nextElementSibling, "Your year group should be 2022, 2023, 2024 or 2025 only.")
@@ -76,6 +77,7 @@ function validateUserInputs(e) {
     checkFieldLength(password, 5, 15)
     checkRequiredFields([fullname, email, yeargroup, major, password, confirmpassword])
     checkMajor(major)
+    checkYeargroup(yeargroup)
     checkUserEmail(email)
     confirmPassword(password, confirmpassword)
 
