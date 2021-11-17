@@ -115,6 +115,7 @@ input:focus {
     .main-container {
         width: 100%;
         height: 750px;
+        padding: 20px 0;
     }
 
     .login-container {
