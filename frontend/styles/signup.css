@@ -158,3 +158,10 @@ input:focus {
     }
 
 }
+
+@media screen and (min-width: 1200px) {
+    .main-container {
+        height: 100vh;
+    }
+    
+}
