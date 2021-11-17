@@ -9,11 +9,11 @@ body {
 }
 
 .login-container {
-    height: 650px;
+    height: 760px;
     background-color: white;
     width: 35%;
     margin: 0 auto; 
-    top: 8%; 
+    top: 2%; 
     left: 32%;
     position: absolute;
     display: flex;
@@ -41,13 +41,13 @@ body {
 }
 
 .fullname {
-    height: 50px; 
+    height: 70px; 
     padding: 0 20px 20px 20px;
     color: #800000; 
 }
 
 .email, .major, .yeargroup, .password, .confirmpassword {
-    height: 50px; 
+    height: 70px; 
     padding: 0 20px 20px 20px; 
     color: #800000;
 }
