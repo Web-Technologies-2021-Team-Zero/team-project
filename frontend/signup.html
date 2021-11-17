@@ -16,7 +16,6 @@
     <div class="main-container" >
         <div class="login-container">
             <div class="login"> 
-                <!-- <form method="POST"> -->
                 <form action="login.html" method="post" onsubmit="validateUserInputs(event)">
                     <div class="logo">
                         <img src="./images/logo_v1.JPG" alt="Logo" id="login-logo" />

@@ -1,108 +1,102 @@
 body {
     margin: 0;
+}
+
+.main-container {
+    background-color: #800000;
+    height: 100vh;
     font-family: Lato, sans-serif;
 }
 
-nav {
-    height: 100px;
-    /*background-color: #800000;*/
-}
-
-.navbar div {
-    display: inline-block;
-    width: 700px;
-    background-color: blue;
-    height: 300px;
-}
- 
-nav img {
-    height: 100px;
-    display: inline;
-    
-}
-
-.navbar {
-    display: inline-flex;
-    height: 200px;
-    margin: 0 auto;
-}
-
-nav span {
-    float: right;
-    margin: 30px 40px 0 0;
-
-}
-
-nav span a {
-    padding: 20px;
-    text-decoration: none;
-    color: #800000c9;
-}
-
-nav span a:hover {
-    border-bottom: 3px solid #800000;
-    color: #570000;
-}
-
-.navbar input,.navbar button,.navbar span {
-    margin-top: 53px;
-}
-
-.navbar input {
-    height: 30px;
-    border: 2px solid #800000;
-    border-right: none;
-}
-
-.navbar input {
-    width: 85.2%;
-   
-}
-
-.navbar button {
-    float: right;
-    width: 13.9%;
-    border: none;
-    background-color: #800000;
-    color: white;
-    font-size: 17px;
-    cursor: pointer;
-    height: 37px;
-}
-
-.footer-container {
-    position: relative;
-    min-height: 100vh;
-}
-
-footer {
+.login-container {
+    height: 520px;
+    background-color: white;
+    width: 35%;
+    margin: 0 auto; 
+    top: 18%; 
+    left: 32%;
     position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 400px; 
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+.login {
+    position: absolute; 
+    width: 350px; 
+    height: 300px;
+    padding: 25px;
+}
+
+.logo {
+    height: 100px; 
+    display: flex; 
+    justify-content: center; 
     align-items: center;
-    background-color: #800000;
-    color: white;
 }
 
-footer a, footer span {
-    display: block;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
+#login-logo {
+    height: 100px; 
+    display: inline;
 }
 
-footer a:hover {
-    text-decoration: underline;
+.email {
+    height: 70px; 
+    padding: 20px; 
+    color: #7e6565; 
 }
 
-.footer-content {
+.password {
+    height: 70px; 
+    padding: 0 20px 20px 20px; 
+    color: #800000;
+}
+
+.button-container {
+    height: 30px;
+    padding: 10px 20px 20px 20px;
+    color: #800000;
+}
+
+.contact-admin {
+    padding: 0 20px 20px 20px; 
+    width: 315px; 
+    font-size: 14px; 
     text-align: center;
-    
 }
 
-footer img {
-    height: 100px;
+#signup-button {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #800000; 
+    color: white; 
+    border: none; 
+    height: 40px; 
+    width: 315px; 
+    padding: 10px 20px 30px 20px; 
+    font-weight: bold; 
+    font-size: 16px; 
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
 }
+
+label {
+    font-style: italic
+}
+
+input {
+    display: block; 
+    height: 25px; 
+    width: 300px; 
+    padding: 5px; 
+    border: 1px solid #800000; 
+    border-radius: 2%;
+}
+
+.contact-admin a {
+    color: #800000;
+}
+
+
