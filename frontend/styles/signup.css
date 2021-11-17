@@ -4,16 +4,16 @@ body {
 
 .main-container {
     background-color: #800000;
-    height: 100vh;
+    height: 900px;
     font-family: Lato, sans-serif;
 }
 
 .login-container {
-    height: 760px;
+    height: 800px;
     background-color: white;
     width: 35%;
     margin: 0 auto; 
-    top: 2%; 
+    top: 8%; 
     left: 32%;
     position: absolute;
     display: flex;
@@ -102,4 +102,59 @@ input:focus {
 
 .contact-admin a {
     color: #800000;
+}
+
+@media screen and (max-width: 600px) {
+    .login {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        padding: 0;
+    }
+
+    .main-container {
+        width: 100%;
+    }
+
+    .login-container {
+        width: 90%;
+        margin: 0 auto; 
+        top: 0;
+        left: 0;
+        position: relative;
+        margin-top: 30px;
+        height: 100vh;
+    }
+
+    #login-logo {
+        height: 70px;
+    }
+
+    input {
+        width: 80%;
+        height: 18px;
+    }
+
+    #signup-button {
+        height: 30px;
+        width: 80%;
+        padding: 7px 16px 25px  16px;
+    }
+
+    .contact-admin {
+        font-size: 14px;
+    }
+
+    .email, .major, .yeargroup, .password, .confirmpassword, .fullname {
+        height: 70px; 
+        padding: 0 0 20px 20px; 
+        color: #800000;
+    }
+    
+    .button-container {
+        padding: 0 0 20px 20px;
+        width: 100%;
+
+    }
+
 }
