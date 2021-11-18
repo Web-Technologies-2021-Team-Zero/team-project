@@ -87,7 +87,7 @@ function validateUserInputs(e) {
     return false
 }
 
-// document.getElementById("signup-button").addEventListener("click", () => {
-//     let isCorrect = validateUserInputs()
-//     if (isCorrect) location.href = "index.html"
-// })
+document.getElementById("signup-button").addEventListener("click", () => {
+    let isCorrect = validateUserInputs()
+    if (isCorrect) location.href = "index.html"
+})
