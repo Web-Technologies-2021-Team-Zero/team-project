@@ -71,7 +71,7 @@ nav span a:hover {
 
 .footer-container {
     position: relative;
-    min-height: 100vh;
+    /* min-height: 500px; */
 }
 
 footer {
@@ -106,34 +106,58 @@ footer img {
     height: 100px;
 }
 
-section.images {
-    display: flex;
-    flex-direction: row;
+.bg-color {
+    width: 70%;
+    height: 100px;
+    margin: 0 auto;
 }
 
-section.images div {
-    width: 33.33%;
+.carousel-img {
+    height: auto;
+    width: auto;
 }
 
-section.images div img {
+#hello, #hello2, #hello3 {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+
+#get-resources, #get-resources2, #get-resources3 {
+    font-size: 34px;
+    font-weight: 700;
+    color: white;
     
-    height: 500px;
 }
 
-.image1 {
-    background-image: url(../images/image2.jpg);
+#get-resources2 a, #get-resources3 a {
+    text-decoration: underline;
+    color: white;
+}
+.heading {
+    background-color: #801a00;
+    width: 100%;
+    position: static;
 }
 
-.image2 {
-    background-image: url(../images/image3.jpeg);
+.divider {
+    height: 200px;
 }
 
-.image3 {
-    background-image: url(../images/library2.jpg);
+.container-carousel {
+    height: 1000px;
 }
 
-.image1, .image2, .image3 {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #949494;
+.description {
+    position:inherit;
+    padding: 200px;
+    margin: 0 auto;
+    margin-bottom: 400px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    
 }
