@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family: Lato, sans-serif;
+}
+
+nav {
+    height: 100px;
+}
+
+.navbar div {
+    display: inline-block;
+    width: 700px;
+    background-color: blue;
+    height: 300px;
+}
+ 
+nav img {
+    height: 100px;
+    display: inline;
+    
+}
+
+.navbar {
+    display: inline-flex;
+    height: 200px;
+    margin: 0 auto;
+}
+
+nav span {
+    float: right;
+    margin: 30px 40px 0 0;
+
+}
+
+nav span a {
+    padding: 20px;
+    text-decoration: none;
+    color: #800000c9;
+}
+
+nav span a:hover {
+    border-bottom: 3px solid #800000;
+    color: #570000;
+}
+
+.navbar input,.navbar button,.navbar span {
+    margin-top: 53px;
+}
+
+.navbar input {
+    height: 30px;
+    border: 2px solid #800000;
+    border-right: none;
+}
+
+.navbar input {
+    width: 85.2%;
+   
+}
+
+.navbar button {
+    float: right;
+    width: 13.9%;
+    border: none;
+    background-color: #800000;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    height: 37px;
+}
+
+.footer-container {
+    position: relative;
+    /* min-height: 500px; */
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 400px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #800000;
+    color: white;
+}
+
+footer a, footer span {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-content {
+    text-align: center;
+    
+}
+
+footer img {
+    height: 100px;
+}
+
+.bg-color {
+    width: 70%;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.carousel-img {
+    height: auto;
+    width: auto;
+}
+
+#hello, #hello2, #hello3 {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+
+#get-resources, #get-resources2, #get-resources3 {
+    font-size: 34px;
+    font-weight: 700;
+    color: white;
+    
+}
+
+#get-resources2 a, #get-resources3 a {
+    text-decoration: underline;
+    color: white;
+}
+.heading {
+    background-color: #801a00;
+    width: 100%;
+    position: static;
+}
+
+.divider {
+    height: 200px;
+}
+
+.container-carousel {
+    height: 1000px;
+}
+
+.description {
+    position:inherit;
+    padding: 200px;
+    margin: 0 auto;
+    margin-bottom: 400px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    
+}
