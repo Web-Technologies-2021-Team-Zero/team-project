@@ -24,25 +24,14 @@
             <!-- Main content section starts here   -->
         <div class="main-content">
         <div class="wrapper">
-                 <h1>Upload Files</h1>
+                 <h1>My Files</h1>
                 
                  <div>
-                     <!-- Drop down menu -->
-                     <div class="btn-group">
-                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     select by course
-                    </button>
-                    <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Digital Systems Design</a>
-                    <a class="dropdown-item" href="#">Embedded Systems</a>
-                    <a class="dropdown-item" href="#">Data structures and Algorithms</a>
-                    </div>
-                    </div>
 
                     <!-- Button to add upload files -->
                  <div class="up-btns">
-                 <a href="#" class="btn-primary">Upload</a>
-                 <a href="myFiles.php" class="btn-primary">My Files</a>
+                 <a href="upload.php" class="btn-primary">Upload</a>
+                 <a href="main.php" class="btn-primary">Main page</a>
                  </div>
                  </div>
                  <br> <br> <br>
@@ -50,32 +39,35 @@
                 <table style="width: 100%;">
                         <tr>
                              <th>File name</th>
-                             <th>Uploaded by</th>
+                             <th>Date Uploaded</th>
                              <th>Course</th>
                              <th>Actions</th>
                         </tr>
                         <tr>
                              <td>Form validation</td>
-                             <td>Joana Teye</td>
+                             <td>date</td>
                              <td>Web Technologies</td>
                              <td>
-                                 <a href="#" class="btn-secondary">Download</a> 
+                                <a href="#" class="btn-tertiary">Update</a>
+                                <a href="#" class="btn-secondary">Delete</a> 
                              </td>   
                         </tr>
                         <tr>
                              <td>Combinational logic</td>
-                             <td>Lorraine Makuyana</td>
+                             <td>date</td>
                              <td>Digital systems</td>
                              <td>
-                             <a href="#" class="btn-secondary">Download</a> 
+                             <a href="#" class="btn-tertiary">Update</a>
+                             <a href="#" class="btn-secondary">Delete</a> 
                              </td>   
                         </tr>
                         <tr>
                              <td>Stack</td>
-                             <td>Traci Frimpong</td>
+                             <td>date</td>
                              <td>Data Structures and Algorithms</td>
                              <td>
-                             <a href="#" class="btn-secondary">Download</a> 
+                                <a href="#" class="btn-tertiary">Update</a>
+                                <a href="#" class="btn-secondary">Delete</a> 
                              </td>   
                         </tr>
                 </table>
