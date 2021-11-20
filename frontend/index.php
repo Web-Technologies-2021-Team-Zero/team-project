@@ -1,4 +1,44 @@
-<!DOCTYPE html>
+<?php
+
+    include_once (dirname(__FILE__)).'.\database\controllers\input_controller.php';
+?>
+
+<form method="post" action="#">
+
+    <div>
+        <label for="filename"><h4>Filename</h4></label>
+        <input id="filename" type="text" name="query1" value="">
+    </div>
+    <div>
+        <label for="course"><h4>Course</h4></label>
+        <input id="course" type="text" name="query2" value="">
+    </div>
+    <div>
+        <label for="file"><h4>file</h4></label>
+        <input id="file" type="text" name="query3" value="">
+    </div>
+
+    <input type=submit>
+
+</form>
+
+<?php
+    if(isset($_POST['query1']) && isset($_POST['query2']) && isset($_POST['query3']) ) {  
+        $filename = $_POST['query1'];
+        $course = $_POST['query2'];
+        $file = $_POST['query3'];
+        $uploaded_by = "Lorraine Makuyana";
+        $res = upload($fname);
+
+        echo $res;
+            
+        
+        
+    }
+?>
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -93,4 +133,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="./scripts/index.js"></script>
 </body>
-</html>
+</html> -->
