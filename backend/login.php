@@ -62,7 +62,7 @@ if (isset($_POST['submit'])) {
                         <input type="submit" id="signup-button" name="submit" value="Login">
                     </div>
                     <div class="contact-admin">
-                        Don't have an account? <a href="signup.phpk">Sign Up</a><br /><br />
+                        Don't have an account? <a href="signup.php">Sign Up</a><br /><br />
                         Forgot your password? <a href="forgotpassword.html">Reset it now</a>
                     </div>
                 </form>

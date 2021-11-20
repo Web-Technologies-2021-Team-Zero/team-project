@@ -1,3 +1,5 @@
+<?php //include __DIR__ . "../database/controllers/input_controller.php"; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,6 +38,8 @@
                     <a class="dropdown-item" href="#">Digital Systems Design</a>
                     <a class="dropdown-item" href="#">Embedded Systems</a>
                     <a class="dropdown-item" href="#">Data structures and Algorithms</a>
+                    <a class="dropdown-item" href="#">FDE</a>
+                    <a class="dropdown-item" href="#">Leadership</a>
                     </div>
                     </div>
 
@@ -59,7 +63,7 @@
                              <td>Joana Teye</td>
                              <td>Web Technologies</td>
                              <td>
-                                 <a href="#" class="btn-secondary">Download</a> 
+                                 <a href="#" class="btn-tertiary">Download</a> 
                              </td>   
                         </tr>
                         <tr>
@@ -67,15 +71,63 @@
                              <td>Lorraine Makuyana</td>
                              <td>Digital systems</td>
                              <td>
-                             <a href="#" class="btn-secondary">Download</a> 
+                             <a href="#" class="btn-tertiary">Download</a> 
                              </td>   
                         </tr>
                         <tr>
-                             <td>Stack</td>
-                             <td>Traci Frimpong</td>
-                             <td>Data Structures and Algorithms</td>
+                             <td>PID Controllers</td>
+                             <td>Hutton Addy</td>
+                             <td>System Dynamics</td>
                              <td>
-                             <a href="#" class="btn-secondary">Download</a> 
+                             <a href="#" class="btn-tertiary">Download</a> 
+                             </td>   
+                        </tr>
+                        <tr>
+                             <td>Design Thinking</td>
+                             <td>Julius Ceasar</td>
+                             <td>FDE</td>
+                             <td>
+                             <a href="#" class="btn-tertiary">Download</a> 
+                             </td>   
+                        </tr>
+                        <tr>
+                             <td>Form validation</td>
+                             <td>Joana Teye</td>
+                             <td>Web Technologies</td>
+                             <td>
+                                 <a href="#" class="btn-tertiary">Download</a> 
+                             </td>   
+                        </tr>
+                        <tr>
+                             <td>Combinational logic</td>
+                             <td>Lorraine Makuyana</td>
+                             <td>Digital systems</td>
+                             <td>
+                             <a href="#" class="btn-tertiary">Download</a> 
+                             </td>   
+                        </tr>
+                        <tr>
+                             <td>PID Controllers</td>
+                             <td>Hutton Addy</td>
+                             <td>System Dynamics</td>
+                             <td>
+                             <a href="#" class="btn-tertiary">Download</a> 
+                             </td>   
+                        </tr>
+                        <tr>
+                             <td>Design Thinking</td>
+                             <td>Julius Ceasar</td>
+                             <td>FDE</td>
+                             <td>
+                             <a href="#" class="btn-tertiary">Download</a> 
+                             </td>   
+                        </tr>
+                        <tr>
+                             <td>Ethics and Morals</td>
+                             <td>Millicent</td>
+                             <td>Leadership</td>
+                             <td>
+                             <a href="#" class="btn-tertiary">Download</a> 
                              </td>   
                         </tr>
                 </table>
@@ -84,9 +136,10 @@
             </div>
         </div>
         <!--  Main content section ends here  -->
-    </nav>
-    <div style="clear: both;"></div>
-
+        
+        <div style="clear: both;"></div>
+        <br> 
+        <br>
     <!--  Footer section starts here  -->
 <div class="footer">
         <div class="wrapper">
