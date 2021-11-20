@@ -1,6 +1,6 @@
 <?php
 
-    include_once (dirname(__FILE__)).'..\database\classes\input_class.php';
+    include_once (dirname(__FILE__)).'../../classes/input_class.php';
 
     function upload($input, $uploaded_by, $course, $file) {
         

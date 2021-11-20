@@ -27,7 +27,6 @@ CREATE TABLE files (
     file varchar(255),
     date DATE DEFAULT CURRENT_TIMESTAMP(),
     PRIMARY KEY(id), 
-    FOREIGN KEY(user_id) REFERENCES users(id)
 );
 
 INSERT INTO `users` (`id`, `email`, `fullname`, `major`, `yeargroup`, `password`) VALUES 

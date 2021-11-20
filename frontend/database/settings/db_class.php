@@ -18,6 +18,7 @@ class Database {
 	// Execute query
 	function db_query($sqlQuery){
 		if ((!$this->db_connect()) || ($this->db==null) ) {
+			echo "db connect failed";
 			return false;
 		}
 
@@ -26,7 +27,7 @@ class Database {
 	}
 
 	function db_fetch(){
-		if (($this->results == null) || ($this->results == false)) {
+		if (!($this->results) {
 			return false;
 		}
 	

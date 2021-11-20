@@ -28,7 +28,7 @@
         $course = $_POST['query2'];
         $file = $_POST['query3'];
         $uploaded_by = "Lorraine Makuyana";
-        $res = upload($fname);
+        $res = upload($filename, $uploaded_by, $course, $file);
 
         echo $res;
             
