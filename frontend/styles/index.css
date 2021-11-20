@@ -5,6 +5,8 @@ body {
 
 nav {
     height: 100px;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .navbar div {
@@ -41,6 +43,7 @@ nav span a {
 nav span a:hover {
     border-bottom: 3px solid #800000;
     color: #570000;
+    text-decoration: none;
 }
 
 .navbar input,.navbar button,.navbar span {

@@ -21,20 +21,20 @@
     <input type=submit>
 
 </form> -->
-<!-- <?php
-    if(isset($_POST['query1']) && isset($_POST['query2']) && isset($_POST['query3']) ) {  
+  <?php
+    /*if(isset($_POST['query1']) && isset($_POST['query2']) && isset($_POST['query3']) ) {  
         $filename = $_POST['query1'];
         $course = $_POST['query2'];
         $file = $_POST['query3'];
         $uploaded_by = "Lorraine Makuyana";
         $res = upload($filename, $uploaded_by, $course, $file);
-
-        echo $res;
-            
-        
-        
-    }
-?> -->
+        if ($res) {
+            echo "Upload successfull"; 
+        } else {
+            echo "Upload Failed!"; 
+        }
+    }*/
+?>  
 
 
 <!DOCTYPE html>
@@ -102,15 +102,20 @@
         </section> 
         <section class="description">
             <div>
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit perspiciatis reprehenderit</h1>
+                <h1>Ashesi Resource Hub</h1>
+                <h1>Your "one-stop-shop" for resources on-the-go</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nulla dignissimos autem quae, 
-                    quibusdam minus consectetur nam. Atque sed, odit mollitia vero quaerat doloribus delectus 
-                    deserunt alias aperiam cumque earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nulla dignissimos autem quae, 
-                    quibusdam minus consectetur nam. Atque sed, odit mollitia vero quaerat doloribus delectus 
-                    deserunt alias aperiam cumque earum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nulla dignissimos autem quae, 
-                    quibusdam minus consectetur nam. Atque sed, odit mollitia vero quaerat doloribus delectus 
-                    deserunt alias aperiam cumque earum.
+                    So, you want to get some study material, not in this list->[lecture slides, textbooks, online material/links]? 
+                    <br>
+                    Look no further! 
+                    <br> 
+                    Here is the place where you will find any documents that have been shared by your peers and your seniors who have 
+                    passed through the same courses before you. How amazing is that? No calling or texting your seniors asking for past notes
+                    and any material you would need. Why? Because they would have uploaded all the material and you can find it 
+                    all in one place! Where? Here. So, can I ask what you are still waiting for? &#128579; 
+                    <br> 
+                    <button id="register-btn">Get an account today</button> 
+                    <button id="signup-btn"> Log in </button>
                 </p>
             </div>
         </section>      
