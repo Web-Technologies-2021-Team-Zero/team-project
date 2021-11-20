@@ -27,7 +27,7 @@ class Database {
 	}
 
 	function db_fetch(){
-		if (!($this->results) {
+		if (!($this->results)) {
 			return false;
 		}
 	
