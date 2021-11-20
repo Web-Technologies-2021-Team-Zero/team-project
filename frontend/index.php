@@ -3,7 +3,7 @@
     include_once (dirname(__FILE__)).'.\database\controllers\input_controller.php';
 ?>
 
-<form method="post" action="#">
+<!-- <form method="post" action="#">
 
     <div>
         <label for="filename"><h4>Filename</h4></label>
@@ -20,9 +20,8 @@
 
     <input type=submit>
 
-</form>
-
-<?php
+</form> -->
+<!-- <?php
     if(isset($_POST['query1']) && isset($_POST['query2']) && isset($_POST['query3']) ) {  
         $filename = $_POST['query1'];
         $course = $_POST['query2'];
@@ -35,10 +34,10 @@
         
         
     }
-?>
+?> -->
 
 
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -133,4 +132,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="./scripts/index.js"></script>
 </body>
-</html> -->
+</html>
