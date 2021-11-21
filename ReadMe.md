@@ -22,8 +22,8 @@ Continue making changes on your own branch.
 
 ### Roles 
 Frontend - Lorraine  
-Backend - Millicent  
-Database - Joana  
+Backend - Joana  
+Database - Millicent 
 Project Manager - Tracy  
 
 Thank you and happy coding!
