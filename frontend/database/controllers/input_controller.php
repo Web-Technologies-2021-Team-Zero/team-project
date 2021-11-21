@@ -44,7 +44,7 @@
         }
     }
 
-    function getUser($id) {
+    function getUserName($id) {
         $request = new ResourceHub;
         $runQuery = $request->getUser($id); 
         if ($runQuery) {
@@ -53,4 +53,15 @@
             return false; 
         }
     }
+
+    function getUserId($email, $password) {
+        $request = new ResourceHub; 
+        $runQuery = $request->getUserId($email, $password); 
+        if ($runQuery) {
+            return $runQuery; 
+        } else {
+            return false; 
+        }
+    }
+
 ?>

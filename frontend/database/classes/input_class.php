@@ -22,9 +22,14 @@ class ResourceHub extends Database {
         return $this->db_query($sql);
     }
 
-    public function getUser($id) {
+    public function getUserName($id) {
         $sql = "SELECT `fullname` FROM users WHERE `id`=$id"; 
         return $this->db_query($sql);
+    }
+
+    public function getUserId($email, $password) {
+        $sql = "SELECT `id` FROM users WHERE `email`='$email' and `password`='$password'"; 
+        return $this->db_query($sql); 
     }
 }
 
