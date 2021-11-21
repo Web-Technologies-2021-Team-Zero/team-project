@@ -55,9 +55,6 @@ if (isset($_POST['submit'])) {
                         <label for="password">Password</label>
                         <input type="password" id="password" name="password" />
                     </div>
-                    <!-- <div class="button-container">
-                        <button id="login-button" onClick={login}>Log In</button>
-                    </div> -->
                     <div class="button-container">
                         <input type="submit" id="signup-button" name="submit" value="Login">
                     </div>
