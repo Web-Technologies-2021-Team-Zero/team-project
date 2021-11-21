@@ -54,7 +54,8 @@
                         <input type="submit" id="signup-button" name="submit" value="Sign Up" value="">
                     </div>
                     <div class="contact-admin">
-                        Already have an account? <a href="login.html">Login</a>
+                        Already have an account? <a href="login.php">Login</a><br>
+                        <a style="padding-top: 30px" href="index.php">Go back home</a>
                     </div>
                 </form>
             </div>

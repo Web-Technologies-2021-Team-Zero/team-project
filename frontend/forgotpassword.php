@@ -38,8 +38,8 @@
                         <input type="submit" id="signup-button" name="submit" value="Change Password">
                     </div>
                     <div class="contact-admin">
-                        <br/>Don't have an account? <a href="signup.html">Sign Up</a><br /><br />
-                        Already have an account? <a href="login.html">Login</a>
+                        <br/>Don't have an account? <a href="signup.php">Sign Up</a><br /><br />
+                        Already have an account? <a href="login.php">Login</a>
                     </div>
                 </form>
             </div>

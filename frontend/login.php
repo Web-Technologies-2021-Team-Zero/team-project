@@ -36,8 +36,7 @@
                         <input type="submit" id="signup-button" name="submit" value="Login">
                     </div>
                     <div class="contact-admin">
-                        Don't have an account? <a href="signup.html">Sign Up</a><br /><br />
-                        Forgot your password? <a href="forgotpassword.html">Reset it now</a>
+                        Don't have an account? <a href="signup.php">Sign Up</a><br /><br />
                     </div>
                 </form>
             </div>

@@ -1,9 +1,12 @@
-body {
+/* body {
     margin: 0;
     font-family: Lato, sans-serif;
 }
 
 nav {
+    background-color: green;
+    width: 70%;
+    margin: 0 auto;
     height: 100px;
 }
 
@@ -28,7 +31,7 @@ nav img {
 
 nav span {
     float: right;
-    margin: 30px 40px 0 0;
+    margin: 30px 0 0;
 
 }
 
@@ -41,6 +44,7 @@ nav span a {
 nav span a:hover {
     border-bottom: 3px solid #800000;
     color: #570000;
+    text-decoration: none;
 }
 
 .navbar input,.navbar button,.navbar span {
@@ -71,7 +75,7 @@ nav span a:hover {
 
 .footer-container {
     position: relative;
-    /* min-height: 500px; */
+    /* min-height: 500px; 
 }
 
 footer {
@@ -160,4 +164,4 @@ footer img {
     
 
     
-}
+} */
