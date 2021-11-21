@@ -22,7 +22,7 @@ function checkFieldLength(input, minLength, maxLength) {
         showAllErrors(input.nextElementSibling, `Your ${input.name} cannot be less than characters long`)
     }
     if (input.value.length >= maxLength) {
-        showAllErrors(input.nextElementSibling, `Your ${input.name)} cannot be more than characters long`)
+        showAllErrors(input.nextElementSibling, `Your ${input.name} cannot be more than characters long`)
     }
 }
 

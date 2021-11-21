@@ -35,11 +35,11 @@
                      select by course
                     </button>
                     <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Digital Systems Design</a>
+                    <a class="dropdown-item" href="#">Web Technologies</a>
                     <a class="dropdown-item" href="#">Embedded Systems</a>
-                    <a class="dropdown-item" href="#">Data structures and Algorithms</a>
+                    <a class="dropdown-item" href="#">Data Structures and Algorithms</a>
                     <a class="dropdown-item" href="#">FDE</a>
-                    <a class="dropdown-item" href="#">Leadership</a>
+                    <a class="dropdown-item" href="#">System Dynamics</a>
                     </div>
                     </div>
 
@@ -69,7 +69,7 @@
                         <tr>
                              <td>Combinational logic</td>
                              <td>Lorraine Makuyana</td>
-                             <td>Digital systems</td>
+                             <td>System Dynamics</td>
                              <td>
                              <a href="#" class="btn-tertiary">Download</a> 
                              </td>   
@@ -101,7 +101,7 @@
                         <tr>
                              <td>Combinational logic</td>
                              <td>Lorraine Makuyana</td>
-                             <td>Digital systems</td>
+                             <td>Data Structures and Dynamics</td>
                              <td>
                              <a href="#" class="btn-tertiary">Download</a> 
                              </td>   
@@ -125,7 +125,7 @@
                         <tr>
                              <td>Ethics and Morals</td>
                              <td>Millicent</td>
-                             <td>Leadership</td>
+                             <td>Embedded Systems</td>
                              <td>
                              <a href="#" class="btn-tertiary">Download</a> 
                              </td>   
