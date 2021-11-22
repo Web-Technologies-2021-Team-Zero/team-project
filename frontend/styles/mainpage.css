@@ -4,7 +4,7 @@ Author: Joana Teye
 *{
     margin:0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Lato, sans-serif;
 }
 
 .wrapper{
@@ -40,6 +40,7 @@ table tr td{
     padding: 1%;
 }
 
+
 .btn-primary{
     background-color: #cc0000;
     padding: 5%;
@@ -54,16 +55,19 @@ table tr td{
 }
 
 .btn-secondary{
-    background-color: #ff6b81;
-    padding: 5%;
-    color: white;
+    /* background-color: #cc0000; */
+    padding: 10px 15px;
+    color: #cc0000;
     text-decoration: none;
     font-weight: bold;
     border-radius: 3%;
+    border: 2px solid #cc0000;
+    background-color: #f1f2f6 ;
+    font-size: 16px;
 }
 
 .btn-secondary:hover{
-    background-color: #ff4757;
+    background-color: #990000;
 }
 
 .btn-tertiary{
@@ -79,20 +83,27 @@ table tr td{
     background-color: #3742fa;
 }
 
+option:hover {
+    background-color: white;
+    color: #cc0000;
+}
+
 .up-btns{
     float: right;
     width: 200px;
 }
 
 .nav-bar{
-    padding: 2px;
+    padding: 2px 30px 0 0;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .btn-logout{
     float: right;
     text-decoration: none;
     background-color: #cc0000;
-    padding: 15px;
+    padding: 10px 15px;
     margin: 2%;
     color: white;
     font-weight: bold;
@@ -101,6 +112,8 @@ table tr td{
 
 .btn-logout:hover{
     background-color: #990000;
+    text-decoration: none;
+    color: white;
 }
 
 /* CSS for main content */
