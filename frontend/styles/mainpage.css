@@ -83,6 +83,11 @@ table tr td{
     background-color: #3742fa;
 }
 
+option:hover {
+    background-color: white;
+    color: #cc0000;
+}
+
 .up-btns{
     float: right;
     width: 200px;

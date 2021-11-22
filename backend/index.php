@@ -15,9 +15,10 @@
     <link href="../frontend/styles/mainpage.css" rel="stylesheet">
 
     <title>Resource Hub | Team Zero</title>
-    <script src="../frontend/scripts/headings.js"></script>
+    
 </head>
-<body onload="test()">
+<!-- <body onload="test()"> -->
+<body>
     <nav class="nav-bar">
         <img src="../frontend/images/logo_v1.JPG" alt="Resource hub logo" style="height:100px">
         <a href="login.php" class="btn-logout">Logout</a>
@@ -31,15 +32,18 @@
                  <div>
                      <!-- Drop down menu -->
                      <div class="btn-group">
-                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <!-- <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                      Browse by course
-                    </button>
-                    <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Web Technologies</a>
-                    <a class="dropdown-item" href="#">Embedded Systems</a>
-                    <a class="dropdown-item" href="#">Data Structures and Algorithms</a>
-                    <a class="dropdown-item" href="#">FDE</a>
-                    <a class="dropdown-item" href="#">System Dynamics</a>
+                    </button> -->
+                    <div >
+                         <select id="selectcourse" class="btn btn-secondary btn-sm dropdown-toggle"">
+                              <option value="">View all courses</option>>
+                              <option value="Embedded Systems">Embedded Systems</option>
+                              <option value="Web Technologies">Web Technologies</option>
+                              <option value="Data Structures and Algorithms">Data Structures and Algorithms</option>
+                              <option value="System Dynamics">System Dynamics</option>
+                              <option value="FDE">FDE</option>
+                         </select>
                     </div>
                     </div>
 
@@ -51,7 +55,7 @@
                  </div>
                  <br><br>
                 
-                <table style="width: 100%;">
+                <table id="display" style="width: 100%;">
                         <tr>
                              <th>File name</th>
                              <th>Uploaded by</th>
@@ -152,6 +156,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
-    <script src="./scripts/index.js"></script>
+    <script src="../frontend/scripts/mainpage.js"></script>
 </body>
 </html>
