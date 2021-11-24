@@ -24,7 +24,7 @@ CREATE TABLE files (
     filename varchar(255),
     uploaded_by varchar(255), 
     course varchar(255) NOT NULL, 
-    file varchar(255),
+    temp_filename varchar(255),
     date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY(id)
 );
@@ -32,3 +32,8 @@ CREATE TABLE files (
 INSERT INTO `users` (`id`, `email`, `fullname`, `major`, `yeargroup`, `password`) VALUES 
 (NULL, 'lorraine@example.com', 'Lorraine Makuyana', 'CE', '2022', '12345678'), 
 (NULL, 'joana@example.com', 'Joana Teye', 'CE', '2022', '87654321');
+
+
+INSERT INTO `files` (`id`, `user_id`, `filename`, `uploaded_by`, `course`, `temp_filename`) VALUES 
+(NULL, '1', 'all-parts.png', 'Joana Teye', 'Embedded System', '21237-all-parts.png'),
+(NULL, '2', '3kp-04991.png', 'Lorraine Makuyana', 'Data Structures and Algorithms', '62925-3kp-04991.jpg');
