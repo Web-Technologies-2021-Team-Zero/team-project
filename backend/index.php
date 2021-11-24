@@ -49,7 +49,7 @@
 
                     <!-- Button to add upload files -->
                  <div class="up-btns">
-                 <a href="#" class="btn-primary">Upload</a>
+                 <a href="upload.php" class="btn-primary">Upload</a>
                  <a href="myFiles.php" class="btn-primary">My Files</a>
                  </div>
                  </div>

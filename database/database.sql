@@ -25,8 +25,8 @@ CREATE TABLE files (
     uploaded_by varchar(255), 
     course varchar(255) NOT NULL, 
     file varchar(255),
-    date DATE DEFAULT CURRENT_TIMESTAMP(),
-    PRIMARY KEY(id), 
+    date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY(id)
 );
 
 INSERT INTO `users` (`id`, `email`, `fullname`, `major`, `yeargroup`, `password`) VALUES 

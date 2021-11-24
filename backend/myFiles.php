@@ -31,7 +31,7 @@
                     <!-- Button to add upload files -->
                  <div class="up-btns">
                  <a href="upload.php" class="btn-primary">Upload</a>
-                 <a href="main.php" class="btn-primary">Main page</a>
+                 <a href="index.php" class="btn-primary">Main page</a>
                  </div>
                  </div>
                  <br> <br> <br>
@@ -48,7 +48,7 @@
                              <td>date</td>
                              <td>Web Technologies</td>
                              <td>
-                                <a href="#" class="btn-tertiary">Update</a>
+                                <a href="update.php" class="btn-tertiary">Update</a>
                                 <a href="#" class="btn-secondary">Delete</a> 
                              </td>   
                         </tr>
@@ -57,7 +57,7 @@
                              <td>date</td>
                              <td>Digital systems</td>
                              <td>
-                             <a href="#" class="btn-tertiary">Update</a>
+                             <a href="update.php" class="btn-tertiary">Update</a>
                              <a href="#" class="btn-secondary">Delete</a> 
                              </td>   
                         </tr>
@@ -66,7 +66,7 @@
                              <td>date</td>
                              <td>Data Structures and Algorithms</td>
                              <td>
-                                <a href="#" class="btn-tertiary">Update</a>
+                                <a href="update.php" class="btn-tertiary">Update</a>
                                 <a href="#" class="btn-secondary">Delete</a> 
                              </td>   
                         </tr>
