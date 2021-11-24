@@ -25,7 +25,7 @@ if(isset($_POST['submit']))
  
  if(move_uploaded_file($file_loc,$folder.$final_file))
  {
-  upload($filename, $username, $mycourse, $file);
+  upload($filename, $username, $mycourse, $final_file);
   
   echo '<script language="javascript">';
   echo 'alert("File sucessfully uploaded")';
