@@ -207,7 +207,7 @@ footer img {
     text-decoration: none;
 }
 
-#signup-btn {
+#login-btn {
     padding: 8px 10px;
     background-color: none;
     border: 2px solid #b30202;
@@ -216,8 +216,9 @@ footer img {
     border-radius: 5px;
 }
 
-#signup-btn:hover {
+#login-btn:hover {
     background-color: #80000015;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 360px) and (max-width: 600px) {

@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link href="./styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="./styles/landingpage.css" rel="stylesheet" type="text/css" />
 
     <title>Resource Hub | Team Zero</title>
 </head>
@@ -82,8 +82,8 @@
                     <em style="color: #800000;">Where?</em> <br><br>
                     Here. <br><br>
                     <em style="color: #800000;">So, can I ask what you are still waiting for?</em> &#128579; <br><br> 
-                    <button id="register-btn">Get Started</button>
-                    <button id="signup-btn"> Log in </button>
+                    <a href="signup.php" id="register-btn">Get Started</a>
+                    <a href="login.php" id="login-btn"> Log in </a>
                 </p>
             </div>
         </section>      
