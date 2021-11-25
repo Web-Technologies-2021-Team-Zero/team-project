@@ -1,5 +1,3 @@
-<?php //include __DIR__ . "../database/controllers/input_controller.php"; ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

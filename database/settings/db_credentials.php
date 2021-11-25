@@ -3,6 +3,6 @@
 define("DATABASE", "resource_hub");
 define("SERVER", "localhost");
 define("USERNAME", "root");
-define("PASSWORD", "");
+define("PASSWORD", "12345678");
 
 ?>

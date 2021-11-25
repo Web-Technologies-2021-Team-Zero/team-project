@@ -1,3 +1,42 @@
+<?php require __DIR__ . "./../database/controllers/input_controller.php"; ?>
+<?php
+    $username = 'joana';
+
+    $myFilesInfo = getMyFiles($username); 
+
+    function displayMyFiles($username) {
+        
+        $myFilesInfo = getMyFiles($username); 
+        print_r($myFilesInfo);
+        if(!$myFilesInfo) {
+            echo "Nothing here";
+        }
+        if ($myFilesInfo) {
+            $row = $myFilesInfo->fetch_array(MYSQLI_NUM); 
+            while($row) {
+                $id = $row[0];
+                echo "<tr>"; 
+                echo "<td>"; 
+                echo $row[1]; 
+                echo "</td>"; 
+                echo "<td>"; 
+                echo $row[2]; 
+                echo "</td>"; 
+                echo "<td>"; 
+                echo $row[3]; 
+                echo "</td>";
+                echo "<td>"; 
+                echo "<a href='update.php?itemToUpdate=$id' ><button name='update' class='btn-tertiary'>Update</button></a>";
+                echo "<a href='myFiles.php?itemToDelete=$id' ><button name='delete' class='btn-secondary'>Delete</button></a>";
+                echo "</td>";
+                echo "</tr>";
+            }
+        }
+        
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,11 +78,28 @@
                 <table style="width: 100%;">
                         <tr>
                              <th>File name</th>
-                             <th>Date Uploaded</th>
                              <th>Course</th>
+                             <th>Date Uploaded</th>
                              <th>Actions</th>
                         </tr>
-                        <tr>
+
+                        <?php
+
+                            if(isset($_GET['itemToDelete'])) {
+                                $id = $_GET['itemToDelete'];
+                                $res = deleteFile($id); 
+                                if ($res) {
+                                    $myFilesInfo = array();
+                                    displayMyFiles($username);
+                                } else {
+                                    echo "Delete failed";
+                                }
+                            }
+
+                            displayMyFiles($username);
+
+                        ?>
+                        <!-- <tr>
                              <td>Form validation</td>
                              <td>date</td>
                              <td>Web Technologies</td>
@@ -69,7 +125,7 @@
                                 <a href="update.php" class="btn-tertiary">Update</a>
                                 <a href="#" class="btn-secondary">Delete</a> 
                              </td>   
-                        </tr>
+                        </tr> -->
                 </table>
 
                  <div class="clearfix"></div>
