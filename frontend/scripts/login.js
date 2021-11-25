@@ -14,10 +14,10 @@ function showAllErrors(displayPlace, message) {
 // Check for input lengths for register fields 
 function checkFieldLength(input, minLength, maxLength) {
     if (input.value.length <= minLength) {
-        showAllErrors(input.nextElementSibling, `Your ${input.name} cannot be less than characters long`)
+        showAllErrors(input.nextElementSibling, `Your ${input.name} cannot be less than ${minLength} characters long`)
     }
     if (input.value.length >= maxLength) {
-        showAllErrors(input.nextElementSibling, `Your ${input.name} cannot be more than characters long`)
+        showAllErrors(input.nextElementSibling, `Your ${input.name} cannot be more than ${maxLength} characters long`)
     }
 }
 
@@ -45,9 +45,9 @@ function validateUserInputs(e) {
     checkRequiredFields([email, password])
     checkUserEmail(email)
 
-    if (errors === 0) {
+    if (errors == 0) {
         console.log('No errors in form. Proceeding to login')
-        location.href = "dashboard.html"
+        location.href = "../backend/index.php"
     }
     return false
 }

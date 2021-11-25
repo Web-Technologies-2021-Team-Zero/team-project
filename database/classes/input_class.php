@@ -8,7 +8,11 @@ class ResourceHub extends Database {
     }
 
     public function getByCourse($course) {
-        $sql = "SELECT * FROM files WHERE `course`='$course'"; 
+        if ($course == "View all courses") {
+            $sql = "SELECT `filename`,`uploaded_by`,`course` FROM `files`"; 
+        } else {
+            $sql = "SELECT `filename`,`uploaded_by`,`course` FROM `files` WHERE course='$course'";
+        }
         return $this->db_query($sql);
     }
 
