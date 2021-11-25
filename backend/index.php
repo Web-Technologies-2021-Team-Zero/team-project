@@ -2,22 +2,22 @@
 
      
 
-     function displayData($row) {
-          echo "<tr>"; 
-          echo "<td>"; 
-          echo $row[0]; 
-          echo "</td>"; 
-          echo "<td>"; 
-          echo $row[1]; 
-          echo "</td>"; 
-          echo "<td>"; 
-          echo $row[2]; 
-          echo "</td>"; 
-          echo "<td>"; 
-          echo "<a href='#' class='btn-tertiary'>Download</a>"; 
-          echo "</td>"; 
-          echo "</tr>";
-     }
+    function displayData($row) {
+        echo "<tr>"; 
+        echo "<td>"; 
+        echo $row[0]; 
+        echo "</td>"; 
+        echo "<td>"; 
+        echo $row[1]; 
+        echo "</td>"; 
+        echo "<td>"; 
+        echo $row[2]; 
+        echo "</td>"; 
+        echo "<td>"; 
+        echo "<a href='#' class='btn-tertiary'>Download</a>"; 
+        echo "</td>"; 
+        echo "</tr>";
+    }
 
 ?>
 
@@ -57,17 +57,17 @@
                      Browse by course
                     </button> -->
                     <div >
-                         <form method="post">
-                              <select name="course" id="selectcourse" class="btn btn-secondary btn-sm dropdown-toggle" onchange="this.form.submit()">
-                                   <option value="">Browse Courses</option>
-                                   <option value="View all courses">View all courses</option>
-                                   <option value="Embedded Systems">Embedded Systems</option>
-                                   <option value="Web Tech">Web Technologies</option>
-                                   <option value="Data Structures and Algorithms">Data Structures and Algorithms</option>
-                                   <option value="System Dynamics">System Dynamics</option>
-                                   <option value="FDE">FDE</option>
-                              </select>
-                         </form>
+                        <form method="post" action="">
+                            <select name="course" id="selectcourse" class="btn btn-secondary btn-sm dropdown-toggle" onchange="this.form.submit()">
+                                <option value="">Browse Courses</option>
+                                <option value="View all courses">View all courses</option>
+                                <option value="Embedded Systems">Embedded Systems</option>
+                                <option value="Web Tech">Web Technologies</option>
+                                <option value="Data Structures and Algorithms">Data Structures and Algorithms</option>
+                                <option value="System Dynamics">System Dynamics</option>
+                                <option value="FDE">FDE</option>
+                            </select>
+                        </form>
                     </div>
                     </div>
 
@@ -199,6 +199,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
-    <script src="../frontend/scripts/mainpage.js"></script>
+    <script src="./../frontend/scripts/mainpage.js"></script>
 </body>
 </html>

@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link href="./styles/login.css" rel="stylesheet" type="text/css" />
-
     <title>Resource Hub | Team Zero</title>
 </head>
 <body>
@@ -29,9 +28,6 @@
                         <input type="password" id="password" name="password" />
                         <small id="error2"></small>
                     </div>
-                    <!-- <div class="button-container">
-                        <button id="login-button" onClick={login}>Log In</button>
-                    </div> -->
                     <div class="button-container">
                         <input type="submit" id="signup-button" name="submit" value="Login">
                     </div>

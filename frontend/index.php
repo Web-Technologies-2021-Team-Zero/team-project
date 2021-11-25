@@ -29,7 +29,6 @@
     </nav>
     <div style="clear: both;"></div>
     <main>
-
         <section class="container-carousel">
             <div id="carouselExampleControls" class="carousel slide .active bg-color" data-ride="carousel">
                 <div class="carousel-inner">

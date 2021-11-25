@@ -5,13 +5,11 @@ const signup_btn = document.getElementById("signup-button")
 
 let errors = 0;
 
-// show input error messages
 function showAllErrors(displayPlace, message) {
     displayPlace.innerHTML = message;
     errors += 1;
 }
 
-// Check for input lengths for register fields 
 function checkFieldLength(input, minLength, maxLength) {
     if (input.value.length <= minLength) {
         showAllErrors(input.nextElementSibling, `Your ${input.name} cannot be less than ${minLength} characters long`)
@@ -51,8 +49,3 @@ function validateUserInputs(e) {
     }
     return false
 }
-
-// document.getElementById("signup-button").addEventListener("click", () => {
-//     let isCorrect = validateUserInputs()
-//     if (isCorrect) location.href = "index.html"
-// })

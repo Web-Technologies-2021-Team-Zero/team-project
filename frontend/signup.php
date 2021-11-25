@@ -11,7 +11,6 @@
 
     <title>Resource Hub | Team Zero</title>
 </head>
-
 <body>
     <div class="main-container" >
         <div class="login-container">
