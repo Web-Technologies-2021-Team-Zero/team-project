@@ -2,8 +2,8 @@
 require_once (dirname(__FILE__)).'../../settings/db_class.php';
 class ResourceHub extends Database {
 
-    public function upload($input, $uploaded_by, $course, $file) {
-        $sql = "INSERT INTO `files` (`filename`, `uploaded_by`, `course`, `file`) VALUES ('$input', '$uploaded_by', '$course', '$file')";
+    public function upload($filename, $uploaded_by, $course, $file) {
+        $sql = "INSERT INTO `files` (`filename`, `uploaded_by`, `course`, `file`) VALUES ('$filename', '$uploaded_by', '$course', '$file')";
         return $this->db_query($sql);
     }
 
@@ -22,8 +22,8 @@ class ResourceHub extends Database {
         return $this->db_query($sql);
     }
 
-    public function getUser($id) {
-        $sql = "SELECT `fullname` FROM users WHERE `id`=$id"; 
+    public function getUser($email) {
+        $sql = "SELECT `fullname` FROM users WHERE `email`=$email"; 
         return $this->db_query($sql);
     }
 }

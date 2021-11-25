@@ -9,7 +9,7 @@ if(isset($_POST['submit']))
  $file_type = $_FILES['file']['type'];
  $folder="upload/";
  $filename = $_POST['filename'];
- $username = getUser($id);
+ $username = getUser($email);
  $mycourse = $_POST['mycourse'];
 
  

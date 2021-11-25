@@ -2,10 +2,10 @@
 
     include_once (dirname(__FILE__)).'../../classes/input_class.php';
 
-    function upload($input, $uploaded_by, $course, $file) {
+    function upload($filename, $uploaded_by, $course, $temp_file) {
         
         $request = new ResourceHub;
-        $runQuery = $request->upload($input, $uploaded_by, $course, $file);
+        $runQuery = $request->upload($filename, $uploaded_by, $course, $temp_file);
         
         if($runQuery) {
             return $runQuery;
@@ -44,9 +44,9 @@
         }
     }
 
-    function getUser($id) {
+    function getUser($email) {
         $request = new ResourceHub;
-        $runQuery = $request->getUser($id); 
+        $runQuery = $request->getUser($email); 
         if ($runQuery) {
             return $runQuery; 
         } else {
