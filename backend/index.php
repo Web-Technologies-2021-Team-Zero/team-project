@@ -190,7 +190,7 @@
     <!--  Footer section starts here  -->
 <div class="footer">
         <div class="wrapper">
-                <p class="text-center">All rights reserved, Resource Study Hub. Developed by - <a href="#" class="footer-link">Team-zero</a> </p>
+                <p class="text-center"> &copy; 2021 All rights reserved. Resource Study Hub. Developed by - <a href="https://github.com/Web-Technologies-2021-Team-Zero/team-project" target="_blank" class="footer-link">Team Zero</a> </p>
         </div>
 </div>
 <!--  Footer section ends here  -->
