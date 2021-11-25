@@ -7,10 +7,6 @@
     function displayMyFiles($username) {
         
         $myFilesInfo = getMyFiles($username); 
-        print_r($myFilesInfo);
-        if(!$myFilesInfo) {
-            echo "Nothing here";
-        }
         if ($myFilesInfo) {
             $row = $myFilesInfo->fetch_array(MYSQLI_NUM); 
             while($row) {
@@ -54,7 +50,8 @@
     <title>Resource Hub | Team Zero</title>
     <script src="../frontend/scripts/headings.js"></script>
 </head>
-<body onload="test()">
+<!-- <body onload="test()"> -->
+<body>
     <nav class="nav-bar">
         <img src="../frontend/images/logo_v1.JPG" alt="Resource hub logo" style="height:100px">
         <a href="login.php" class="btn-logout">Logout</a>

@@ -20,7 +20,7 @@ session_start();
 
     <div class="container">
 
-        <!-- ADD THIS ATTRIBUTE TO THE FORM TO ALSO VALIDATE WITH JAVASCRIPT BEFORE SUBMITTING TO BACKEND:
+        <!--     ADD THIS ATTRIBUTE TO THE FORM TO ALSO VALIDATE WITH JAVASCRIPT BEFORE SUBMITTING TO BACKEND:
               onsubmit="return validateForm(event);" 
         -->
         <form   action="../database/contollers/input_controller.php" method="POST" enctype="multipart/form-data" onsubmit="return validateForm(event);">
