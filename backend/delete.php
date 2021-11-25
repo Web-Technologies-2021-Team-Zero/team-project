@@ -1,3 +1,25 @@
+<?php
+    require_once 'conn.php';
+ 
+    if($_POST['submit']){
+        $file_name=$_REQUEST['filename'];
+ 
+        $query=mysqli_query($conn, "SELECT * FROM `files` WHERE `file_id`='$file_id'") or die(mysqli_error());
+        $fetch=mysqli_fetch_array($query);
+ 
+        $location=$fetch['location'];
+ 
+ 
+        if(unlink($location)){
+            mysqli_query($conn, "DELETE FROM `files` WHERE `file_id`='$file_id'") or die(mysqli_error());
+ 
+            header('location: index.php');
+        }
+ 
+    }
+ 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

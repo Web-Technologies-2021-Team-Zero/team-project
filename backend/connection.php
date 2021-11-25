@@ -1,18 +1,17 @@
-<?php 
-$con = mysqli_connect('localhost', 'root', '', 'resource_hub');
-?>
-
-<?php 
-
-$server = "localhost";
-$user = "root";
-$pass = "";
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
 $database = "resource_hub";
 
-$conn = mysqli_connect($server, $user, $pass, $database);
+// Create connection
+$conn = new mysqli($servername, $username, $password, $database);
 
-if (!$conn) {
-    die("<script>alert('Connection Failed.')</script>");
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
 }
-
+//echo '<script language="javascript">';
+//echo 'alert("Connected successfully")';
+//echo '</script>';
 ?>
