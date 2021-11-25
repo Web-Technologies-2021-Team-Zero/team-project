@@ -1,4 +1,25 @@
-<?php //include __DIR__ . "../database/controllers/input_controller.php"; ?>
+<?php require __DIR__ . "./../database/controllers/input_controller.php"; ?> <?php 
+
+     
+
+     function displayData($row) {
+          echo "<tr>"; 
+          echo "<td>"; 
+          echo $row[0]; 
+          echo "</td>"; 
+          echo "<td>"; 
+          echo $row[1]; 
+          echo "</td>"; 
+          echo "<td>"; 
+          echo $row[2]; 
+          echo "</td>"; 
+          echo "<td>"; 
+          echo "<a href='#' class='btn-tertiary'>Download</a>"; 
+          echo "</td>"; 
+          echo "</tr>";
+     }
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -36,14 +57,17 @@
                      Browse by course
                     </button> -->
                     <div >
-                         <select id="selectcourse" class="btn btn-secondary btn-sm dropdown-toggle"">
-                              <option value="">View all courses</option>>
-                              <option value="Embedded Systems">Embedded Systems</option>
-                              <option value="Web Technologies">Web Technologies</option>
-                              <option value="Data Structures and Algorithms">Data Structures and Algorithms</option>
-                              <option value="System Dynamics">System Dynamics</option>
-                              <option value="FDE">FDE</option>
-                         </select>
+                         <form method="post">
+                              <select name="course" id="selectcourse" class="btn btn-secondary btn-sm dropdown-toggle" onchange="this.form.submit()">
+                                   <option value="">Browse Courses</option>
+                                   <option value="View all courses">View all courses</option>
+                                   <option value="Embedded Systems">Embedded Systems</option>
+                                   <option value="Web Tech">Web Technologies</option>
+                                   <option value="Data Structures and Algorithms">Data Structures and Algorithms</option>
+                                   <option value="System Dynamics">System Dynamics</option>
+                                   <option value="FDE">FDE</option>
+                              </select>
+                         </form>
                     </div>
                     </div>
 
@@ -62,7 +86,26 @@
                              <th>Course</th>
                              <th>Actions</th>
                         </tr>
-                        <tr>
+
+                        <?php 
+
+                              if (isset($_POST["course"])) {
+                                   $course = $_POST["course"];
+                                   $results = getByCourse($course); 
+                                   if ($results) {
+                                        $row = $results->fetch_array(MYSQLI_NUM); 
+                                        while($row) {
+                                             displayData($row); 
+                                             $row = $results->fetch_array(MYSQLI_NUM);
+                                        }
+                                   } else {
+                                        echo "Not working";
+                                   }  
+                              }
+                        ?>
+
+
+                        <!-- <tr>
                              <td>Form validation</td>
                              <td>Joana Teye</td>
                              <td>Web Technologies</td>
@@ -133,7 +176,7 @@
                              <td>
                              <a href="#" class="btn-tertiary">Download</a> 
                              </td>   
-                        </tr>
+                        </tr> -->
                 </table>
 
                  <div class="clearfix"></div>

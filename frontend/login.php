@@ -15,7 +15,7 @@
     <div class="main-container" >
         <div class="login-container">
             <div class="login"> 
-                <form action="index.html" method="post" onsubmit="validateUserInputs(event)">
+                <form action="../backend/index.php" method="post" onsubmit="validateUserInputs(event)">
                     <div class="logo">
                         <img src="./images/logo_v1.JPG" alt="Logo" id="login-logo" />
                     </div>
