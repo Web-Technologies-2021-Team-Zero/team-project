@@ -1,30 +1,5 @@
-<?php 
 
-include 'connection.php';
-
-session_start();
-
-error_reporting(0);
-
-if (isset($_SESSION['username'])) {
-   header("Location: index.php");
-}
-
-if (isset($_POST['submit'])) {
-	$email = $_POST['email'];
-	$password = md5($_POST['password']);
-
-	$sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
-	$result = mysqli_query($conn, $sql);
-	if ($result->num_rows > 0) {
-		$row = mysqli_fetch_assoc($result);
-		$_SESSION['username'] = $row['username'];
-		header("Location: index.php");
-	} else {
-		echo "<script>alert('Woops! Email or Password is Wrong.')</script>";
-	}
-}
-?>
+<?php include('server.php') ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -35,39 +10,42 @@ if (isset($_POST['submit'])) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link href="../frontend/styles/login.css" rel="stylesheet" type="text/css" />
-
+    <link href="login.css" rel="stylesheet" type="text/css" />
     <title>Resource Hub | Team Zero</title>
 </head>
 <body>
     <div class="main-container" >
         <div class="login-container">
             <div class="login"> 
-                <form action="index.html" method="post">
+                <form action="index.html" method="post" onsubmit="validateUserInputs(event)">
+                <?php include('errors.php'); ?>
                     <div class="logo">
                         <img src="./images/logo_v1.JPG" alt="Logo" id="login-logo" />
                     </div>
-                    <div class="username">
-                        <label for="username">Username</label>
-                        <input type="text" id="username" name="username" />
+                    <div class="email">
+                        <label for="email">Email Address</label>
+                        <input type="text" id="email" name="email" />
+                        <small id="error1"></small>
                     </div>
                     <div class="password">
                         <label for="password">Password</label>
                         <input type="password" id="password" name="password" />
+                        <small id="error2"></small>
                     </div>
                     <!-- <div class="button-container">
                         <button id="login-button" onClick={login}>Log In</button>
                     </div> -->
                     <div class="button-container">
-                        <input type="submit" id="signup-button" name="submit" value="Login">
+                        <input type="submit" id="signup-button" name="login_user" value="Login">
                     </div>
                     <div class="contact-admin">
-                        Don't have an account? <a href="signup.php">Sign Up</a><br /><br />
-                        Forgot your password? <a href="forgotpassword.html">Reset it now</a>
+                        Don't have an account? <a href="register.php">Sign Up</a><br /><br />
                     </div>
                 </form>
             </div>
         </div>
     </div> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="scripts/login.js"></script>
 </body>
 </html>

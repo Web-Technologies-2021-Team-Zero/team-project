@@ -1,49 +1,41 @@
-<?php 
-
-include 'connection.php';
-
-error_reporting(0);
-
-session_start();
-
-if (isset($_SESSION['username'])) {
-    header("Location: login.php");
-}
-
-if (isset($_POST['submit'])) {
-	$username = $_POST['username'];
-	$email = $_POST['email'];
-    $yearGroup = $_POST['yeargroup'];
-    $major = $_POST['major'];
-	$password = md5($_POST['password']);
-	$cpassword = md5($_POST['confirmpassword']);
-
-	if ($password == $cpassword) {
-		$sql = "SELECT * FROM user WHERE email='$email'";
-		$result = mysqli_query($conn, $sql);
-		if (!$result->num_rows > 0) {
-			$sql = "INSERT INTO user (username, email, yearGroup, major, password)
-					VALUES ('$username', '$email', '$yearGroup', '$major', '$password')";
-			$result = mysqli_query($conn, $sql);
-			if ($result) {
-				echo "<script>alert('User Registration Completed.')</script>";
-				$username = "";
-				$email = "";
-				$_POST['password'] = "";
-				$_POST['cpassword'] = "";
-			} else {
-				echo "<script>alert('Woops! Something Wrong Went.')</script>";
-			}
-		} else {
-			echo "<script>alert('Woops! Email Already Exists.')</script>";
-		}
-		
-	} else {
-		echo "<script>alert('Password Not Matched.')</script>";
-	}
-}
-
-?>
+<?php include('server.php') ?>
+<!--<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration system PHP and MySQL</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="header">
+  	<h2>Register</h2>
+  </div>
+	
+  <form method="post" action="register.php">
+  	<div class="input-group">
+  	  <label>Username</label>
+  	  <input type="text" name="username" value="">
+  	</div>
+  	<div class="input-group">
+  	  <label>Email</label>
+        <input type="email" name="email" value="">
+  	</div>
+  	<div class="input-group">
+  	  <label>Password</label>
+  	  <input type="password" name="password_1">
+  	</div>
+  	<div class="input-group">
+  	  <label>Confirm password</label>
+  	  <input type="password" name="password_2">
+  	</div>
+  	<div class="input-group">
+  	  <button type="submit" class="btn" name="reg_user">Register</button>
+  	</div>
+  	<p>
+  		Already a member? <a href="login.php">Sign in</a>
+  	</p>
+  </form>
+</body>
+</html>-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -54,28 +46,26 @@ if (isset($_POST['submit'])) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link href="../frontend/styles/signup.css" rel="stylesheet" type="text/css" />
-
+    <link href="signup.css" rel="stylesheet" type="text/css" />
     <title>Resource Hub | Team Zero</title>
 </head>
-
 <body>
     <div class="main-container" >
         <div class="login-container">
             <div class="login"> 
-                <!-- <form method="POST"> -->
-                <form action="login.php" method="post" onsubmit="validateUserInputs(event)">
+                <form action="register.php" method="post" onsubmit="validateUserInputs(event)">
+				<?php include('errors.php'); ?>
                     <div class="logo">
                         <img src="./images/logo_v1.JPG" alt="Logo" id="login-logo" />
                     </div>
                     <div class="fullname">
                         <label for="fullname">Full Name</label>
-                        <input type="text" id="fullname" name="fullname" value=""/>
+                        <input type="text" id="fullname" name="fullname" value="<?php echo $username; ?>"/> 
                         <small id="error1"></small>
                     </div>
                     <div class="email">
                         <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" value="" />
+                        <input type="email" id="email" name="email" value="<?php echo $email; ?>" />
                         <small id="error2"></small>
                     </div>
                     <div class="yeargroup">
@@ -90,19 +80,20 @@ if (isset($_POST['submit'])) {
                     </div>
                     <div class="password">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password" value=""/>
+                        <input type="password" id="password" name="password_1" value=""/>
                         <small id="error5"></small>
                     </div>
                     <div class="confirmpassword">
                         <label for="confirmpassword">Confirm Password</label>
-                        <input type="password" id="confirmpassword" name="confirmpassword" value=""/>
+                        <input type="password" id="confirmpassword" name="password_2" value=""/>
                         <small id="error6"></small>
                     </div>
                     <div class="button-container">
-                        <input type="submit" id="signup-button" name="submit" value="Sign Up" value="">
+                        <input type="submit" id="signup-button" name="reg_user" value="Sign Up" value="">
                     </div>
                     <div class="contact-admin">
-                        Already have an account? <a href="login.php">Login</a>
+                        Already have an account? <a href="login.php">Login</a><br>
+                        <a style="padding-top: 30px" href="index.php">Go back home</a>
                     </div>
                 </form>
             </div>

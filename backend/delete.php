@@ -1,8 +1,8 @@
 <?php
-    require_once 'conn.php';
+    require __DIR__ ."/connection.php";
  
-    if($_POST['submit']){
-        $file_name=$_REQUEST['filename'];
+    if($_POST['id']){
+        $file_name=$_REQUEST['id'];
  
         $query=mysqli_query($conn, "SELECT * FROM `files` WHERE `file_id`='$file_id'") or die(mysqli_error());
         $fetch=mysqli_fetch_array($query);
@@ -47,7 +47,7 @@
                 echo "Are you sure you want to delete...";
             ?>
             <small id='success'></small>
-            <button type="submit" id='submitBtn' name="submit">Delete</button>
+            <a href="delete.php?id=''" type="submit" id='submitBtn' name="submit">Delete</a>
             </div>
         </form>
     </div>
