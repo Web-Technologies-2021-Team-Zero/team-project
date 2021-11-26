@@ -11,7 +11,7 @@ USE resource_hub;
 CREATE TABLE users (
     id int(11) NOT NULL AUTO_INCREMENT,
     email varchar(255) NOT NULL, 
-    fullname varchar(255) NOT NULL, 
+    username varchar(255) NOT NULL, 
     major varchar(255) NOT NULL, 
     yeargroup varchar(255) NOT NULL, 
     password varchar(255) NOT NULL, 
@@ -29,7 +29,7 @@ CREATE TABLE files (
     PRIMARY KEY(id)
 );
 
-INSERT INTO `users` (`id`, `email`, `fullname`, `major`, `yeargroup`, `password`) VALUES 
+INSERT INTO `users` (`id`, `email`, `username`, `major`, `yeargroup`, `password`) VALUES 
 (NULL, 'lorraine@example.com', 'Lorraine Makuyana', 'CE', '2022', '12345678'), 
 (NULL, 'joana@example.com', 'Joana Teye', 'CE', '2022', '87654321');
 

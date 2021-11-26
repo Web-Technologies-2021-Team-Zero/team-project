@@ -17,14 +17,14 @@
     <div class="main-container" >
         <div class="login-container">
             <div class="login"> 
-                <form action="index.html" method="post" onsubmit="validateUserInputs(event)">
+                <form action="./index.php" method="post" onsubmit="validateUserInputs(event)">
                 <?php include('errors.php'); ?>
                     <div class="logo">
                         <img src="./images/logo_v1.JPG" alt="Logo" id="login-logo" />
                     </div>
                     <div class="email">
-                        <label for="email">Email Address</label>
-                        <input type="text" id="email" name="email" />
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" />
                         <small id="error1"></small>
                     </div>
                     <div class="password">

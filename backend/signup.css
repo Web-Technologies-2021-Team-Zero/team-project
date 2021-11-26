@@ -4,16 +4,16 @@ body {
 
 .main-container {
     background-color: #800000;
-    height: 100vh;
+    height: 1000px;
     font-family: Lato, sans-serif;
 }
 
 .login-container {
-    height: 520px;
+    height: 800px;
     background-color: white;
     width: 35%;
     margin: 0 auto; 
-    top: 18%; 
+    top: 8%; 
     left: 32%;
     position: absolute;
     display: flex;
@@ -40,13 +40,13 @@ body {
     display: inline;
 }
 
-.email {
+.username {
     height: 70px; 
-    padding: 20px; 
-    color: #7e6565; 
+    padding: 0 20px 20px 20px;
+    color: #800000; 
 }
 
-.password {
+.email, .major, .yeargroup, .password, .confirmpassword {
     height: 70px; 
     padding: 0 20px 20px 20px; 
     color: #800000;
@@ -54,7 +54,7 @@ body {
 
 .button-container {
     height: 30px;
-    padding: 10px 20px 20px 20px;
+    padding: 10px 20px 20px 20px; 
     color: #800000;
 }
 
@@ -80,19 +80,24 @@ body {
     text-align: center;
     vertical-align: middle;
     border-radius: 4px;
-}
+} 
 
 label {
-    font-style: italic
+    font-style: italic; 
+    font-size: 12px;
 }
 
 input {
     display: block; 
-    height: 25px; 
+    height: 22px; 
     width: 300px; 
     padding: 5px; 
-    border: 1px solid #800000; 
+    border: 1px solid #80000052; 
     border-radius: 2%;
+}
+
+input:focus {
+    outline: 1px solid #800000;
 }
 
 .contact-admin a {
@@ -120,7 +125,7 @@ input {
         left: 0;
         position: relative;
         margin-top: 30px;
-        height: 530px;
+        height: 730px;
     }
 
     #login-logo {
@@ -143,7 +148,7 @@ input {
         padding: 0;
     }
 
-    .email, .major, .yeargroup, .password, .confirmpassword, .fullname {
+    .email, .major, .yeargroup, .password, .confirmpassword, .username {
         height: 70px; 
         padding: 0 0 20px 20px; 
         color: #800000;

@@ -23,7 +23,7 @@ class ResourceHub extends Database {
     }
 
     public function getUser($email) {
-        $sql = "SELECT `fullname` FROM users WHERE `email`=$email"; 
+        $sql = "SELECT `username` FROM users WHERE `email`=$email"; 
         return $this->db_query($sql);
     }
 }

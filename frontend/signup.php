@@ -16,13 +16,13 @@
     <div class="main-container" >
         <div class="login-container">
             <div class="login"> 
-                <form action="login.html" method="post" onsubmit="validateUserInputs(event)">
+                <form action="./login.php" method="post" onsubmit=validateUserInputs(event)>
                     <div class="logo">
                         <img src="./images/logo_v1.JPG" alt="Logo" id="login-logo" />
                     </div>
-                    <div class="fullname">
-                        <label for="fullname">Full Name</label>
-                        <input type="text" id="fullname" name="fullname" value=""/>
+                    <div class="username">
+                        <label for="username">Full Name</label>
+                        <input type="text" id="username" name="username" value=""/>
                         <small id="error1"></small>
                     </div>
                     <div class="email">
@@ -62,6 +62,6 @@
         </div>
     </div> 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="./scripts/signup.js"></script>
+    <script src="../frontend/scripts/signup.js"></script>
 </body>
 </html>

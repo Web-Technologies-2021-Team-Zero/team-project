@@ -19,6 +19,11 @@ if (isset($_POST['submit'])) { // if save button on the form is clicked
     $file = $_FILES['file']['tmp_name'];
     $size = $_FILES['file']['size'];
 
+    // $exp = explode(".", $file);
+    // $ext = end($exp);
+    // $fileL = time();
+    // $location = "uploads/".$fileL.".".$ext;
+
     if (!in_array($extension, ['png', 'pdf', 'docx', 'jpg'])) {
         echo '<script language="javascript">';
         echo 'alert("You file extension must be .jpg, .pdf, .png or .docx")';
@@ -30,8 +35,8 @@ if (isset($_POST['submit'])) { // if save button on the form is clicked
     } else {
         // move the uploaded (temporary) file to the specified destination
         if (move_uploaded_file($file, $destination)) {
-            $sql = "INSERT INTO `files` (`id`, `user_id`, `filename`, `uploaded_by`, `course`, `temp_filename`) VALUES 
-            (NULL, '5', '$filename', 'Ernest Oppong', '$mycourse', '$file')";
+            $sql = "INSERT INTO `files` (`id`, `filename`, `uploaded_by`, `course`, `temp_filename`, `location`) VALUES 
+            (NULL, '$filename', 'Ernest Oppong', '$mycourse', '$file', '$destination')";
             if (mysqli_query($conn, $sql)) {
                 echo '<script language="javascript">';
                 echo 'alert("File sucessfully uploaded")';

@@ -53,16 +53,17 @@
     <div class="main-container" >
         <div class="login-container">
             <div class="login"> 
-                <form action="register.php" method="post" onsubmit="validateUserInputs(event)">
+                <form action="register.php" method="post" onsubmit=validateUserInputs(event)>
 				<?php include('errors.php'); ?>
                     <div class="logo">
                         <img src="./images/logo_v1.JPG" alt="Logo" id="login-logo" />
                     </div>
-                    <div class="fullname">
-                        <label for="fullname">Full Name</label>
-                        <input type="text" id="fullname" name="fullname" value="<?php echo $username; ?>"/> 
+                    <div class="username" style="margin: 20px;">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" value="<?php echo $username; ?>"/> 
                         <small id="error1"></small>
                     </div>
+                    <br>
                     <div class="email">
                         <label for="email">Email Address</label>
                         <input type="email" id="email" name="email" value="<?php echo $email; ?>" />
@@ -93,13 +94,14 @@
                     </div>
                     <div class="contact-admin">
                         Already have an account? <a href="login.php">Login</a><br>
-                        <a style="padding-top: 30px" href="index.php">Go back home</a>
+                        <a style="padding-top: 30px" href="../../index.php">Go back home</a>
                     </div>
                 </form>
             </div>
         </div>
     </div> 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="./scripts/signup.js"></script>
+    <script src="./../frontend/scripts/signup.js"></script>  
+    
 </body>
 </html>

@@ -1,6 +1,8 @@
+//alert("signup.js")
+
 // Get UI elements 
 const username = document.getElementById("username")
-const fullname = document.getElementById("fullname")
+//const username = document.getElementById("username")
 const email = document.getElementById("email")
 const yeargroup = document.getElementById("yeargroup")
 const major = document.getElementById("major")
@@ -19,10 +21,10 @@ function showAllErrors(displayPlace, message) {
 // Check for input lengths for register fields 
 function checkFieldLength(input, minLength, maxLength) {
     if (input.value.length <= minLength) {
-        showAllErrors(input.nextElementSibling, `Your ${input.name} cannot be less than characters long`)
+        showAllErrors(input.nextElementSibling, `Your ${input.name} cannot be less than ${minLength} characters long`)
     }
     if (input.value.length >= maxLength) {
-        showAllErrors(input.nextElementSibling, `Your ${input.name} cannot be more than characters long`)
+        showAllErrors(input.nextElementSibling, `Your ${input.name} cannot be more than ${maxLength} characters long`)
     }
 }
 
@@ -44,7 +46,6 @@ function checkUserEmail(input) {
 
 function checkYeargroup(input) {
     let y_group = parseInt(input.value)
-    alert(y_group)
     if (y_group) {
         if ((y_group < 2022) && (y_group > 2025) ) {
             showAllErrors(input.nextElementSibling, "Your year group should be 2022, 2023, 2024 or 2025 only.")
@@ -59,8 +60,10 @@ function checkMajor(input) {
     }
 }
 
-function confirmPassword(password1, password2) {
+function confirmPassword(input, password1, password2) {
+    
     if (password1.value != password2.value) {
+        alert("Confirming passwords")
         showAllErrors(input.nextElementSibling, "Your passwords must match to continue")
     }
 }
@@ -73,13 +76,13 @@ function validateUserInputs(e) {
     //     tag.innerHTML = ""
     // })
     $('small').html('');
-    checkFieldLength(fullname, 5, 50)
+    checkFieldLength(username, 5, 50)
     checkFieldLength(password, 5, 15)
-    checkRequiredFields([fullname, email, yeargroup, major, password, confirmpassword])
+    checkRequiredFields([username, email, yeargroup, major, password, confirmpassword])
     checkMajor(major)
     checkYeargroup(yeargroup)
     checkUserEmail(email)
-    confirmPassword(password, confirmpassword)
+    confirmPassword(password, password, confirmpassword)
 
     if (errors === 0) {
         return true
@@ -87,7 +90,7 @@ function validateUserInputs(e) {
     return false
 }
 
-document.getElementById("signup-button").addEventListener("click", () => {
-    let isCorrect = validateUserInputs()
-    if (isCorrect) location.href = "index.html"
-})
+// document.getElementById("signup-button").addEventListener("click", () => {
+//     let isCorrect = validateUserInputs()
+//     if (isCorrect) location.href = "index.html"
+// })
