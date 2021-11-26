@@ -53,4 +53,14 @@
             return false; 
         }
     }
+
+    function getMyFiles($username) {
+        $request = new ResourceHub; 
+        $runQuery = $request->getMyFiles($username); 
+        if($runQuery) {
+            return $runQuery; 
+        } else {
+            return false; 
+        }
+    }
 ?>

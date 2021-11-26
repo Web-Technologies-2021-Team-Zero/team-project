@@ -26,6 +26,11 @@ class ResourceHub extends Database {
         $sql = "SELECT `username` FROM users WHERE `email`=$email"; 
         return $this->db_query($sql);
     }
+
+    public function getMyFiles($username) {
+        $sql = "SELECT `id`,`filename`,`course`,`date` FROM files WHERE `uploaded_by`='$username'"; 
+        return $this->db_query($sql); 
+    }
 }
 
 ?>
